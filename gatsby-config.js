@@ -1,10 +1,10 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
 module.exports = {
-  siteMetadata: {
-    title: "Reflex",
-    description: "Starter for the Reflex.",
-    siteUrl: process.env.SITE_URL || "http://localhost:8000",
-  },
-  plugins: ["@reflexjs/gatsby-theme-base"],
-}
+	siteMetadata: {
+		title: 'Reflex',
+		description: 'Starter for the Reflex.',
+		siteUrl: process.env.SITE_URL || 'http://localhost:8000'
+	},
+	plugins: [ '@reflexjs/gatsby-theme-base', '@reflexjs/gatsby-theme-core' ]
+};
